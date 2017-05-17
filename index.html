@@ -8,20 +8,21 @@
 </head>
 <body>
 	<header>
-		<h2>Local Weather App</h2>
+		<h1>FreeCodeCamp</h1>
+		<h1>Weather App</h1>
 	</header>
 	<div class="container">
+		<div class="content">
+			<p class="location">Portland, OR</p>
+			<p class="condition">Light Showers</p>
+			<div class="weather-info">
+				<p class="temperature">31<span class="degree-icon">&deg;</span><span class="unit-toggle">F</span></p>
+				<img class="weather-img">
+			</div>
+		</div>
 		<div>
 			<button class="fahrenheit" value="fahrenheit">F</button>
 			<button class="celsius" value="celsius">C</button>
-		</div>
-		<div class="content">
-			<h3 class="location"></h3>
-			<h4 class="condition"></h4>
-			<div class="weather-info">
-				<p class="temperature"> <span class="unit-toggle"></span></p>
-				<img src="weather-img">
-			</div>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

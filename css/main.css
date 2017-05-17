@@ -1,7 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700');
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Comfortaa', sans-serif;
 }
 
+body {
+	text-align: center;
+	background-image: url("../img/weather.jpg");
+}
+
+header {
+	background: rgba(0, 0, 0, 0.4);
+	color: #EA1419;
+	width: 300px;
+	padding: 17px 0;
+	margin: 30px auto;
+}
+
+.container {
+	background: rgba(255, 255, 255 , 0.6);
+	margin: 0 auto;
+	padding: 30px;
+	max-width: 500px;
+	font-weight: 700;
+	color: #5C45C5;
+}
+
+.fahrenheit {
+	float: left;
+	background-color: #555555;
+	color: #fff;
+}
+
+.celsius {
+	float: right;
+	background-color: #e7e7e7;
+	color: #000;
+}
+
+.location {
+	font-size: 32px;
+}
+
+.condition {
+	font-size: 24px;
+}
+
+.temperature {
+	font-size: 48px;
+}
+
+.degree-icon {
+	font-size: 20px;
+}
+
+.weather-info {
+	opacity: 
+}
+
+button {
+	width: 50%;
+	border: none;
+	padding: 7px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button:focus {
+	outline:0;
+}
