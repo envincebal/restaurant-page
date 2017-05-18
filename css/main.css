@@ -3,62 +3,70 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  box-sizing: border-box;
 	font-family: 'Comfortaa', sans-serif;
 }
 
 body {
 	text-align: center;
 	background-image: url("../img/weather.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 header {
 	background: rgba(0, 0, 0, 0.4);
 	color: #EA1419;
-	width: 300px;
+	width: 350px;
 	padding: 17px 0;
 	margin: 30px auto;
 }
 
+.yes {
+	font-size: 50px;
+}
 .container {
 	background: rgba(255, 255, 255 , 0.6);
 	margin: 0 auto;
 	padding: 30px;
-	max-width: 500px;
+	max-width: 400px;
 	font-weight: 700;
 	color: #5C45C5;
+	text-shadow: 0px 2px 0px rgba(150, 150, 150, 1);
+	-webkit-box-shadow: 4px 4px 14px -1px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 14px -1px rgba(0,0,0,0.75);
 }
 
-.fahrenheit {
-	float: left;
-	background-color: #555555;
-	color: #fff;
-}
-
-.celsius {
-	float: right;
-	background-color: #e7e7e7;
-	color: #000;
+.row {
+	margin: 0 0 30px 0;
 }
 
 .location {
 	font-size: 32px;
 }
 
-.condition {
-	font-size: 24px;
-}
-
 .temperature {
 	font-size: 48px;
+	display: inline-block;
+	padding: 0 20px 0 0;
 }
 
 .degree-icon {
-	font-size: 20px;
+	font-size: 30px;
+	position: relative;
+	top: -15px;
 }
 
-.weather-info {
-	opacity: 
+.condition {
+	font-size: 18px;
+}
+
+.toggle {
+	background-color: #555555;
+	color: #fff;
 }
 
 button {
