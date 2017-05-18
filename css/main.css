@@ -5,7 +5,7 @@
 	padding: 0;
 	-webkit-box-sizing: border-box;
   box-sizing: border-box;
-	font-family: 'Comfortaa', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -20,66 +20,60 @@ body {
 header {
 	background: rgba(0, 0, 0, 0.4);
 	color: #EA1419;
-	width: 350px;
+	max-width: 350px;
 	padding: 17px 0;
 	margin: 30px auto;
 }
 
-.yes {
-	font-size: 50px;
-}
 .container {
 	background: rgba(255, 255, 255 , 0.6);
 	margin: 0 auto;
-	padding: 30px;
-	max-width: 400px;
-	font-weight: 700;
+	padding: 30px 80px;
+	max-width: 500px;
 	color: #5C45C5;
-	text-shadow: 0px 2px 0px rgba(150, 150, 150, 1);
 	-webkit-box-shadow: 4px 4px 14px -1px rgba(0,0,0,0.75);
 	box-shadow: 4px 4px 14px -1px rgba(0,0,0,0.75);
 }
 
 .row {
-	margin: 0 0 30px 0;
+	margin: 0 0 20px 0;
+	font-size: 26px;
 }
 
-.location {
-	font-size: 32px;
+hr {
+	background-color: #5C45C5;;
 }
 
-.temperature {
-	font-size: 48px;
-	display: inline-block;
-	padding: 0 20px 0 0;
+h2 {
+	font-weight: 700;
+	font-size: 36px;
+	text-transform: uppercase;
 }
 
 .degree-icon {
-	font-size: 30px;
+	font-size: 26px;
 	position: relative;
-	top: -15px;
+	top: -1px;
 }
 
-.condition {
-	font-size: 18px;
+.wi {
+	font-size: 40px;
+	margin: 20px 0 0 0;
 }
 
 .toggle {
 	background-color: #555555;
 	color: #fff;
-}
-
-button {
-	width: 50%;
+	width: 175px;
 	border: none;
-	padding: 7px 32px;
+	padding: 14px 10px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 20px;
 	cursor: pointer;
 }
 
-button:focus {
+.toggle:focus {
 	outline:0;
 }
