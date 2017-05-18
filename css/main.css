@@ -40,14 +40,13 @@ header {
 	font-size: 26px;
 }
 
-hr {
-	background-color: #5C45C5;;
-}
+
 
 h2 {
 	font-weight: 700;
 	font-size: 36px;
 	text-transform: uppercase;
+	border-bottom: 1px solid #5C45C5;;
 }
 
 .degree-icon {
