@@ -27,8 +27,9 @@ $(document).ready(function(){
 			var fahrenheit = data2.currently.temperature;
 			var currentCondition = data2.currently.summary;
 			var weatherIcon = data2.currently.icon;
-			
+
 			temperature.html(parseInt(fahrenheit) + "&deg" + "F");
+			icon.attr("src", setImage(weatherIcon));
 			condition.html(currentCondition);
 
 			button.click(function(){
@@ -44,4 +45,39 @@ $(document).ready(function(){
 			});
 		});
 	});
+
+	function setImage(param) {
+		switch(param) {
+			case "clear-day": 
+				return "img/clear-day.png";
+				break;
+			case "clear-night": 
+				return "img/clear-night.png";
+				break;
+			case "rain": 
+				return "img/rain.png";
+				break;
+			case "snow": 
+				return "img/snow.png";
+				break;
+			case "sleet": 
+				return "img/sleet.png";
+				break;
+			case "wind": 
+				return "img/wind.png";
+				break;
+			case "fog": 
+				return "img/fog.png";
+				break;
+			case "cloudy":
+				return "img/cloudy.png";
+				break;
+			case "partly-cloudy-day":
+				return "img/partly-cloudy-day.png";
+				break;
+			case "partly-cloudy-night":
+				return "img/partly-cloudy-night.png";	
+				break;
+		}
+	}
 });
