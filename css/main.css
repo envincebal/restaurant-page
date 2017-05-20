@@ -35,20 +35,14 @@ header {
 
 .row {
 	margin: 0 0 20px 0;
-	font-size: 26px;
+	font-size: 32px;
 }
 
 h2 {
 	font-weight: 700;
-	font-size: 36px;
+	font-size: 40px;
 	text-transform: uppercase;
 	border-bottom: 1px solid #5C45C5;;
-}
-
-.degree-icon {
-	font-size: 26px;
-	position: relative;
-	top: -1px;
 }
 
 .wi {
