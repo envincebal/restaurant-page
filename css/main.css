@@ -40,7 +40,7 @@ header {
 
 h2 {
 	font-weight: 700;
-	font-size: 40px;
+	font-size: 38px;
 	text-transform: uppercase;
 	border-bottom: 1px solid #5C45C5;;
 }
@@ -70,4 +70,5 @@ h2 {
 .credit {
 	position: relative;
 	top: 20px;
+	color: #fff;
 }
