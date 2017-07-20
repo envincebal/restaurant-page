@@ -1,20 +1,27 @@
-$.getJSON("https://freegeoip.net/json/", function(data){
+$.ajax({
+  type: "GET",
+  url: "https://freegeoip.net/json/",
+  success: function(data){
 	
-	var geoURL = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/8b01861d3b06ab86ba285ef08d52c88d/" + data.latitude + "," + data.longitude;
+	var geoURL = "https://api.darksky.net/forecast/8b01861d3b06ab86ba285ef08d52c88d/" + data.latitude + "," + data.longitude;
   var change = $(".change");
-	
-	$.getJSON(geoURL, function(data2){
+
+	$.ajax({
+  type: "GET",
+  dataType: "jsonp",
+  url: geoURL,
+  success: function(data2){
 		
     var today = new Date();
     var date = (today.getMonth() + 1) + '/' + today.getDate() + '/' + today.getFullYear();
     var time = today.getHours() + ":" + today.getMinutes();
+    
     $(".current-date").text(date);
-    
     $(".location").text(data.city + ", " + data.region_name);
-    
     $(".condition").text(data2.currently.summary);
     
     var skycons = new Skycons({"color":"#fff"});
+    
 		skycons.add("icon", data2.currently.icon);
 		skycons.play();
     
@@ -24,7 +31,7 @@ $.getJSON("https://freegeoip.net/json/", function(data){
     var toggle = true;
     
 		$(".change").click(function(){
-			if (toggle) {
+		 	if (toggle) {
 				fahrenheit = (fahrenheit - 32) * 5/9;
 				temperature.text(parseInt(fahrenheit) + "°") + change.text("C");
 				toggle = false;
@@ -40,14 +47,15 @@ $.getJSON("https://freegeoip.net/json/", function(data){
     $(".wind-speed").text(data2.currently.windSpeed + " mph");
     $(".sunrise").text(timeConverter(data2.daily.data[0].sunriseTime));
     $(".sunset").text(timeConverter(data2.daily.data[0].sunsetTime));
-	});
-});
-
+	}
+  });
+	}
+  });
 function timeConverter(unix){
   var date2 = new Date(unix * 1000);
   var hours = date2.getHours();
   var minutes = ("0" + date2.getMinutes()).slice(-2);
-  
+    
   if (hours >= 12) {
     hours = hours - 12;
     minutes = minutes + " pm";
@@ -59,5 +67,6 @@ function timeConverter(unix){
   
   return formatTime;
 }
+
 
 	
