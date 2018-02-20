@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,31 +8,33 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+
 <body>
 	<div class="container">
-	  <span class="current-date"></span>
+		<span class="current-date"></span>
 		<p class="location row"></p>
 		<p class="condition"></p>
 		<canvas class="row" id="icon" width="128" height="128"></canvas>
-    <div class="temperature-container row">
-      <span class="temperature"></span><span class="toggle change"></span>
-    </div>
-    <div class="additional-info">
-      <p class="data-header">Chance of rain</p>
-      <span class="rain-chance data"></span>
-      <p class="data-header">Humidity</p>
-      <span class="humidity data"></span>
-      <p class="data-header">Wind Speed</p>
-      <span class="wind-speed data"></span>
-      <p class="data-header">Sunrise</p>
-      <span class="sunrise data"></span>
-      <p class="data-header">Sunset</p>
-      <span class="sunset data"></span>
-    </div>
+		<div class="temperature-container row">
+			<span class="temperature"></span><span class="toggle change"></span>
+		</div>
+		<div class="additional-info">
+			<p class="data-header">Chance of rain</p>
+			<span class="rain-chance data"></span>
+			<p class="data-header">Humidity</p>
+			<span class="humidity data"></span>
+			<p class="data-header">Wind Speed</p>
+			<span class="wind-speed data"></span>
+			<p class="data-header">Sunrise</p>
+			<span class="sunrise data"></span>
+			<p class="data-header">Sunset</p>
+			<span class="sunset data"></span>
+		</div>
 	</div>
 	<p class="credit">Powered by <a class="darksky-link" href="https://darksky.net/poweredby/">Dark Sky</a></p>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
 	<script src="js/app.js"></script>
-</body>	
+</body>
+
 </html>
