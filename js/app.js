@@ -19,8 +19,9 @@ const timeConverter = (unix) => {
 // This AJAX call gets the user's current location
 $.ajax({
 	type: "GET",
-	url: "https://freegeoip.net/json/",
+	url: "https://ipapi.co/json/",
 	success: (data) => {
+
 		const geoURL = "https://api.darksky.net/forecast/8b01861d3b06ab86ba285ef08d52c88d/" + data.latitude + "," + data.longitude;
 		const change = $(".change");
 
@@ -36,7 +37,7 @@ $.ajax({
 				const date = (today.getMonth() + 1) + '/' + today.getDate() + '/' + today.getFullYear();
 
 				$(".current-date").text(date);
-				$(".location").text(data.city + ", " + data.region_name);
+				$(".location").text(data.city + ", " + data.region);
 				$(".condition").text(data2.currently.summary);
 
 				// Creates and animates weather icon based on current weather conditions
